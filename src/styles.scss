@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@use "colors";
+
+body {
+  background-color: colors.$background;
+  color: colors.$text;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  // border: 1px solid orange;
+  // border-radius: 2px;
+  color: colors.$text;
+  &:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  padding: 0;
+  font-family: "Consolas";
+  font-size: 1em;
+}

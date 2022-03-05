@@ -1,0 +1,6 @@
+@use "../../colors";
+
+.card {
+  background-color: colors.$background-slightly-lighter;
+  padding: 1rem;
+}

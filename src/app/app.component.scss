@@ -1,0 +1,27 @@
+@use "../colors";
+
+#top-menu {
+  background-color: colors.$background-slightly-lighter;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  nav {
+    display: flex;
+    gap: 1rem;
+    a {
+      margin-left: 1rem;
+      align-self: center;
+      &:hover,
+      &.selected {
+        color: orange;
+      }
+    }
+  }
+  h1 {
+    text-align: center;
+    margin: 0.5rem;
+  }
+}
+
+div.center {
+  margin-top: 3rem;
+}

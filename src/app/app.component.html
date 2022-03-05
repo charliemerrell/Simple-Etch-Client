@@ -1,7 +1,12 @@
-<nav>
+<div id="top-menu">
+    <nav>
+        <a routerLink="/answer">Answer</a>
+        <a routerLink="/add">Add</a>
+        <a routerLink="/all">View all Cards</a>
+    </nav>
     <h1>Etch</h1>
-    <a routerLink="/answer">Answer</a>
-    <a routerLink="/add">Add</a>
-    <a routerLink="/all">View all Cards</a>
-</nav>
-<router-outlet></router-outlet>
+    <div></div>
+</div>
+<div class="center">
+    <router-outlet></router-outlet>
+</div>
