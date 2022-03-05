@@ -1,0 +1,10 @@
+<div *ngIf="card">
+    <app-card (reveal)="onClickReveal()" [revealing]="revealing" [card]="card"></app-card>
+    <div *ngIf="revealing">
+        <button (click)="onMark(true)">Correct</button>
+        <button (click)="onMark(false)">Incorrect</button>
+    </div>
+</div>
+<div *ngIf="exhaustedCards">
+    Congratulations! There are no cards to answer
+</div>

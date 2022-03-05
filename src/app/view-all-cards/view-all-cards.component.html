@@ -1,1 +1,8 @@
-<p>view-all-cards works!</p>
+<div *ngIf="cards">
+    <div *ngFor="let card of cards">
+        <app-card [card]="card"></app-card>
+    </div>
+</div>
+<div *ngIf="!cards">
+    Cards loading...
+</div>

@@ -1,0 +1,12 @@
+<h2>Add Card</h2>
+<form [formGroup]="cardForm" (ngSubmit)="onSubmit($event)">
+    <div>
+        <label for="question-input">Question:</label>
+        <input id="question-input" formControlName="question">
+    </div>
+    <div>
+        <label for="answer-input">answer:</label>
+        <input id="answer-input" formControlName="answer">
+    </div>
+    <button [disabled]="!cardForm.valid" type="submit">Add</button>
+</form>

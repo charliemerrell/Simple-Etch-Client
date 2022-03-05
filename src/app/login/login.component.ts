@@ -17,6 +17,6 @@ export class LoginComponent implements OnInit {
   onClickLogin() {
     const b64Password = btoa(this.password.value);
     localStorage.setItem('password', b64Password);
-    this.router.navigate(['cards']);
+    this.router.navigate(['answer']);
   }
 }

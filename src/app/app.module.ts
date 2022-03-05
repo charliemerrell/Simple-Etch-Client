@@ -8,9 +8,12 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptorService } from './auth-interceptor.service';
+import { AddCardComponent } from './add-card/add-card.component';
+import { CardComponent } from './card/card.component';
+import { AnswerCardComponent } from './answer-card/answer-card.component';
 
 @NgModule({
-  declarations: [AppComponent, ViewAllCardsComponent, LoginComponent],
+  declarations: [AppComponent, ViewAllCardsComponent, LoginComponent, AddCardComponent, CardComponent, AnswerCardComponent],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
