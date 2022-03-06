@@ -24,6 +24,11 @@ const routes: Routes = [
     path: 'answer',
     component: AnswerCardComponent,
   },
+  {
+    path: '',
+    redirectTo: 'answer',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({

@@ -12,7 +12,6 @@ import { Observable } from 'rxjs';
 })
 export class CanActivateAppService implements CanActivate {
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    console.log(!!localStorage.getItem('password'));
     return !!localStorage.getItem('password');
   }
 }

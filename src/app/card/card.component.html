@@ -1,5 +1,5 @@
 <div class="card">
     <p>{{card.question}}</p>
-    <p *ngIf="revealing">{{card.answer}}</p>
-    <button (click)="onClickReveal()">Reveal</button>
+    <p class="answer-text" [hidden]="!revealing">{{card.answer}}</p>
+    <button [hidden]="revealing" (click)="onClickReveal()">Reveal</button>
 </div>

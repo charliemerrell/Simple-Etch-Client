@@ -11,7 +11,6 @@ textarea {
     outline: none;
   }
   padding: 1rem;
-  
 }
 
 .form-group {
@@ -21,9 +20,4 @@ textarea {
 button {
   margin-top: 0.5rem;
   float: right;
-  &:focus {
-    outline: 1px solid orange;
-  }
-  border-radius: 2px;
-  padding: 5px;
 }

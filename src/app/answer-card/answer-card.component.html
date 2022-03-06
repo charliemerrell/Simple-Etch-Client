@@ -1,6 +1,6 @@
 <div *ngIf="card">
     <app-card (reveal)="onClickReveal()" [revealing]="revealing" [card]="card"></app-card>
-    <div *ngIf="revealing">
+    <div id="answer-buttons" *ngIf="revealing">
         <button (click)="onMark(true)">Correct</button>
         <button (click)="onMark(false)">Incorrect</button>
     </div>

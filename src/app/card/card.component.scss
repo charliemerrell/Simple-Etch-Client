@@ -3,4 +3,17 @@
 .card {
   background-color: colors.$background-slightly-lighter;
   padding: 1rem;
+  white-space: pre-wrap;
+  font-family: "consolas";
+  width: 800px;
+  max-height: 600px;
+  overflow-y: scroll;
+  .answer-text {
+    color: orange;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
