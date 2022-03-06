@@ -1,12 +1,12 @@
 <h2>Add Card</h2>
 <form [formGroup]="cardForm" (ngSubmit)="onSubmit($event)">
-    <div>
+    <div class="form-group">
         <label for="question-input">Question:</label>
-        <textarea id="question-input" formControlName="question"></textarea>
+        <textarea spellcheck="false" cols="80" rows="15" id="question-input" formControlName="question"></textarea>
     </div>
-    <div>
-        <label for="answer-input">answer:</label>
-        <textarea id="answer-input" formControlName="answer"></textarea>
+    <div class="form-group">
+        <label for="answer-input">Answer:</label>
+        <textarea spellcheck="false" cols="80" rows="15" id="answer-input" formControlName="answer"></textarea>
     </div>
     <button [disabled]="!cardForm.valid" type="submit">Add</button>
 </form>

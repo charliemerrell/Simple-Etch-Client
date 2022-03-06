@@ -1,0 +1,29 @@
+@use "../../colors";
+
+textarea {
+  display: block;
+  background-color: colors.$background-slightly-lighter;
+  color: colors.$text;
+  font-family: "consolas";
+  margin-top: 0.5rem;
+  &:focus {
+    border: 1px solid orange;
+    outline: none;
+  }
+  padding: 1rem;
+  
+}
+
+.form-group {
+  margin-top: 1.5rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  float: right;
+  &:focus {
+    outline: 1px solid orange;
+  }
+  border-radius: 2px;
+  padding: 5px;
+}
